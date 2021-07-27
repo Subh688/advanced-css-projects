@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #ddd;
+    padding-top: 50px;
+}
+
+.title{
+    width: 700px;
+    color: #636e72;
+    font-size: 50px;
+    margin: auto;
+}
+
+.btn-container{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.btn{
+    width: 150px;
+    display: flex;
+    margin: 25px auto;
+    justify-content: center;
+    padding: 15px 35px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0px 0px 5px #808080;
+    border-radius: 5px;
+    color: #ddd;
+}
+
+.shake{
+    background: #695151;
+}
+
+.shake:hover{
+    animation: shake 0.25s ease-out;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.bounce{
+    background: #13a750;
+}
+
+.bounce:hover{
+    animation: bounce 0.25s ease-out;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.flash{
+    background: #3427ae;
+}
+
+.flash:hover{
+    animation: flash 0.55s ease-out;
+}
+
+@keyframes flash{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.scale{
+    background: #4d006b;
+}
+
+.scale:hover{
+    animation: scale 0.25s ease-out;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1, 1)
+    }
+    25%{
+        transform: scale(1.5, 1.5)
+    }
+    50%{
+        transform: scale(0.5, 0.5)
+    }
+    75%{
+        transform: scale(1.5, 1.5)
+    }
+    100%{
+        transform: scale(1, 1)
+    }
+}
+
+.swing{
+    background: #ae2732;
+}
+
+.swing:hover{
+    animation: swing 0.25s ease-out;
+}
+
+@keyframes swing{
+    0%{
+        transform: rotate(0deg)
+    }
+    25%{
+        transform: rotate(20deg)
+    }
+    50%{
+        transform: rotate(0deg)
+    }
+    75%{
+        transform: rotate(-20deg)
+    }
+    100%{
+        transform: rotate(0)
+    }
+}

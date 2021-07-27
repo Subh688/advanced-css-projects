@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    width: 300px;
+    padding: 40px 40px 40px 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container .box .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    font-size: 3rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    transition: 1s;
+}
+
+.container .box .content{
+    position: relative;
+    z-index: 1;
+}
+
+.container .box .content h3{
+    text-align: center;
+    padding: 10px;
+}
+
+.container .box .content p{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 30%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: #333;
+}
+
+/* 1 */
+
+.container .box:nth-child(1) .icon{
+    background-color: rgb(255, 0, 0);
+}
+
+.container .box:nth-child(1):hover .icon{
+    transform: rotateZ(360deg);
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 0px 0px 500px rgb(255, 0, 0);
+}
+
+.container .box:nth-child(1):hover .content{
+    color: #fff;
+}
+
+/* 2 */
+
+.container .box:nth-child(2) .icon{
+    background-color: rgb(76, 0, 255);
+}
+
+.container .box:nth-child(2):hover .icon{
+    transform: rotateX(360deg);
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 0px 0px 500px rgb(76, 0, 255);
+}
+
+.container .box:nth-child(2):hover .content{
+    color: #fff;
+}
+
+/* 3 */
+
+.container .box:nth-child(3) .icon{
+    background-color: rgb(0, 102, 17);
+}
+
+.container .box:nth-child(3):hover .icon{
+    transform: rotateY(360deg);
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 0px 0px 500px rgb(0, 102, 17);
+}
+
+.container .box:nth-child(3):hover .content{
+    color: #fff;
+}
